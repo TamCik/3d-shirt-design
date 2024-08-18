@@ -37,15 +37,15 @@ const Home = () => {
                     className='flex flex-col gap-5'
                     >
                       <p className='max-w-md font-normal text-gray-600 text-base'>
-                      Create your unique and exclusive shirt with our brand-new 3D customization tool. <strong>
-                      Unleash your imagination
+                      Bikin kaos unik dan eksklusif kamu dengan platform kustomisasi 3D brand baru kami. <strong>
+                      Bebaskan imajinasimu
                       </strong>{" "}
-                      and define your own style.
+                      dan definisikan gaya terbaikmu.
                       </p>
 
                       <CustomButton
                         type='filled'
-                        title='Customize It'
+                        title='Mulai Meracik'
                         handleClick={() => state.intro = false}
                         customStyle='w-fit px-4 py-2.5 font-bold text-sm'
                       />

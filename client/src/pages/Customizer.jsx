@@ -118,6 +118,12 @@ const Customizer = () => {
      });
   }
 
+  // Adjust the handleClick function for EditorTabs
+  const toggleTab = (tabName) => {
+  // Toggle the tab: close if it's already active, or open the clicked tab
+    setactiveEditorTab(currentTab => currentTab === tabName ? "" : tabName);
+  }; 
+
   return (
     <AnimatePresence>
        {!snap.intro && (
@@ -133,7 +139,7 @@ const Customizer = () => {
                    <Tab
                      key={tab.name}
                      tab={tab}
-                     handleClick={() => setactiveEditorTab(tab.name)}
+                     handleClick={() => toggleTab(tab.name)}
                    />
                  ))}
 
@@ -147,7 +153,7 @@ const Customizer = () => {
           >
             <CustomButton
               type='filled'
-              title='Go Back'
+              title='Balik ke Beranda'
               handleClick={() => state.intro = true}
               customStyle='w-fit px-4 py-2.5 font-bold text-sm'
             />
