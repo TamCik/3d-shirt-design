@@ -50,12 +50,7 @@ const Home = () => {
                         customStyle='w-fit px-4 py-2.5 font-bold text-sm'
                       />
 
-                      <CustomButton
-                        type='filled'
-                        title='Dukung Saya'
-                        onClick={() => <Support /> }
-                        customStyle='w-fit px-4 py-2.5 font-bold text-sm'
-                      />
+                      <Support />
                     </motion.div>
                 </motion.div>
              </motion.section>
